@@ -12,8 +12,13 @@
     <script src="script.js"></script> <!-- Adiciona o arquivo JavaScript -->
 </head>
 <body>
+    <button class="menu-button3" onclick="alternarSidebar3()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </button>
     <div class="list">
-        <nav class="sidebar2">
+        <nav class="sidebar3">
             <strong><h3>Conteúdo</h3> </strong>
             <span class="heading-border"></span>
             <ul class="menu-left__list ">
@@ -59,42 +64,134 @@
         
         <div class="semana2" id="semana2">
             <h2>Segunda semana - Impressão 3D</h2>
+            <p> A impressão 3D é uma técnica de fabricação aditiva que cria objetos tridimensionais a partir de um modelo digital. Utilizando uma impressora 3D, camadas sucessivas de material são depositadas até que a peça final seja formada. Esse processo é controlado por um computador que interpreta um modelo digital, geralmente em formato STL. </p>
+            <p> A impressora 3D disponivel no laboratorio utiliza a tecnologia FDM (Fused Deposition Modeling), onde filamentos de plástico (geralmente PLA ou ABS) são derretidos e extrudidos através de um bico aquecido para formar as camadas do objeto. A impressora movimenta o bico extrusor em três eixos (X, Y e Z) para construir a peça com precisão.</p>
+            <P> Para utilizar a impressora 3D, o processo de preparação do projeto é realizado da seguinte maneira: primeiramente a peça tridimensional é modelada em um software CAD, como Fusin360 ou SolidWorks, após a modelagem o arquivo é esportado em STL e carregado em um software de fateamento como por exemploo Cura, que converte o modelo em instruções G-code. Esse software permite ajustar parâmetros como altura de camada, velocidade de impressão, temperatura do bico e da mesa, entre outros. Por fim, o G-code é enviado para a impressora 3D, que inicia o processo de fabricação da peça.</P>
             <p>
-                A impressão 3D é uma técnica de fabricação aditiva que cria objetos tridimensionais a partir de um modelo digital. Utilizando uma impressora 3D, camadas sucessivas de material são depositadas até que a peça final seja formada. Esse processo é controlado por um computador que interpreta um modelo digital, geralmente em formato STL.
+                Nessa semana utilizei a impressora 3D para projetar algumas das peças que foram utilizadas no meu projeto final da disciplina. Para exemplificar todo o processo irei mostrar como foi impresso a base do projeto.
             </p>
             <p>
-               A impressora 3D disponivel no laboratorio utiliza a tecnologia FDM (Fused Deposition Modeling), onde filamentos de plástico (geralmente PLA ou ABS) são derretidos e extrudidos através de um bico aquecido para formar as camadas do objeto. A impressora movimenta o bico extrusor em três eixos (X, Y e Z) para construir a peça com precisão.
+                A primeira etapa do processo de fabricação é modelar a peça em um software de desenho 3D. A base do meu projeto final foi ajustada no Fusion 360, optei por remover algumas partes da peça origial para economizar filamento e dimunuir o tempo de impressão. A parte retirada, foi posteriormente fabricada por um outro metedo mais rapido e mais barato em relação a impressão 3D.
             </p>
-            <P>
-                Para utilizar a impressora 3D, o processo de preparação do projeto é realizado da seguinte maneira: primeiramente a peça tridimensional é modelada em um software CAD, como Fusin360 ou SolidWorks, após a modelagem o arquivo é esportado em STL e carregado em um software de fateamenteo como por exemploo Cura, que converte o modelo em instruções G-code. Esse software permite ajustar parâmetros como altura de camada, velocidade de impressão, temperatura do bico e da mesa, entre outros. Por fim, o G-code é enviado para a impressora 3D, que inicia o processo de fabricação da peça.
-            </P>
+            <img src="https://static.wixstatic.com/media/88b824_5738ec3377564990a9706173c693ddb6~mv2.png" alt="Impressora 3D"img style= "width: 500px;" />
             <p>
-                Nesta semana, realizei a impressão de um pequeno chaveiro. O modelo foi exportado de um site onde são compartilhados diversos modelos de chaveiros, o arquivo foi baixado em formato STL e fatiado no Cura. Ajustamos os parâmetros de impressão para utilizar PLA com bico de 0.4 mm. Após carregar o G-code na impressora e iniciar o processo, acompanhei a impressão até a finalização do chaveiro.
+                Após modelar a peça, está foi exportada no formato STL para o Ultimate Cura, software de fatiamento. Nessa etapa foram escolhidas as configurações de impressção da peça, como o bico a ser utulizado, o numero de camadas, a pocertagem de preechimento da peça, a velocidade de fabricação e a qualidade da impressão.
             </p>
-                <img src="https://static.wixstatic.com/media/88b824_bbd681676af04d4c90fe7ab2f73f2109~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
-            </div>
+            <img src="https://static.wixstatic.com/media/88b824_d428317857364b979d1b77d31a083388~mv2.png" alt="Impressora 3D"img style= "width: 500px;" />
+            <p>
+                Por fim o arquivo da peça fateada foi carregado na impressora 3D. Antes de inciar a impressão deve-se verificar o nivelamento da mesa e se o PLA está bom para uso, pois esses dois fatores podem contribuir para que ocorram erros de impressão.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_ea9e2d05ffe64daa830ee0d5c85eb47b~mv2.jpeg" alt="Impressora 3D"img style= "width: 500px;" />
+               </div>
         <div class="semana3" id="semana3">
             <h2>Terceira semana - Técnicas de soldagens</h2>
-            <p>
-                Na terceira semana, o foco das atividades no laboratório foi sobre técnicas de soldagem em placas de circuito impresso. O professor nos introduziu aos fundamentos da soldagem, destacando sua importância na montagem e reparo de circuitos eletrônicos.
-            </p>
-            <p>
-                Apredemos nessa semana a como manusear o ferro de solda para evitar acidentes, vimos como utilizar o fluxo para melhorar a aderência da solda na placa, vimos também como devemos posicionar corretamente os componentes na placa para evitar que ocorra curto circuito.
-            <p>
+            <p> Na terceira semana, o foco das atividades no laboratório foi sobre técnicas de soldagem em placas de circuito impresso. O professor nos introduziu aos fundamentos da soldagem, destacando sua importância na montagem e reparo de circuitos eletrônicos.</p>
+            <p> Apredemos nessa semana a como manusear o ferro de solda para evitar acidentes, vimos como utilizar o fluxo para melhorar a aderência da solda na placa, vimos também como devemos posicionar corretamente os componentes na placa para evitar que ocorra curto circuito.</p>
                 <img src="https://static.wixstatic.com/media/88b824_55a732bc03604b1f8f0e07854b42f20e~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
         </div>
         <div class="semana4" id="semana4">
             <h2>Quarta semana - Plotter de corte </h2>
-            <p>
-                Para a quarta semana no FABLAB, aprendemos sobre a plotter de corte, essa maquina se destaca por ter uma grande versatilidade no corte de materias maleaveis como vinil, papel e tecido. A metodologia de trabalho se assemelha a cortadora a laser, mudando apenas a forma com que as maquinas realizam o corte. 
-            </p>
-            <img src="https://static.wixstatic.com/media/88b824_300458361aea448699f9459e375e059f~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
+            <p> Para a quarta semana no FABLAB, aprendemos sobre a plotter de corte, essa maquina se destaca por ter uma grande versatilidade no corte de materias maleaveis como vinil, papel e tecido. A metodologia de trabalho se assemelha a cortadora a laser, mudando apenas a forma com que as maquinas realizam o corte. </p>
+            <img src="https://static.wixstatic.com/media/88b824_300458361aea448699f9459e375e059f~mv2.jpeg" alt="Impressora 3D"img style= "width: 600px;" />
         </div>
         <div class="semana5" id="semana5">
-            <h2>Quinta semana - Corrosão com percloreto de ferro </h2>
-            <p>No laboratório de eletrônica da Universidade de Tecnologia Avançada, um zumbido constante preenchia o ar enquanto estudantes dedicados se reuniam em torno de bancadas repletas de componentes eletrônicos. O cheiro característico de placas de circuito recém-soldadas misturava-se com o aroma de café, indicando que uma longa e produtiva sessão estava prestes a começar.
+            <h2>Quinta semana - Corrosão por percloreto de ferro:</h2>
+            <p>
+                A corrosão de PCBs envolve a remoção seletiva de cobre de uma placa laminada, deixando apenas as trilhas desejadas. O percloreto de ferro é um agente corrosivo eficaz que reage com o cobre, dissolvendo-o e expondo o material isolante subjacente. Este método é amplamente utilizado devido à sua eficiência e relativa simplicidade.
             </p>
-        </div>
+            <p>
+                O processo de corrosão é feito da seguinte maneira, A placa de circuito impresso é inicialmente coberta com uma camada de cobre. Sobre essa camada, é aplicada uma máscara resistente à corrosão (geralmente feita com tinta fotossensível ou fita adesiva) que protege as áreas onde o cobre deve permanecer.  A placa mascarada é submersa em uma solução de percloreto de ferro. A solução reage com o cobre exposto, corroendo-o. As áreas cobertas pela máscara permanecem intactas. Após a corrosão, a máscara é removida, revelando o padrão de trilhas de cobre. A placa é então lavada para remover quaisquer resíduos de percloreto de ferro, e pode ser perfurada e preparada para a soldagem dos componentes.
+            </p>
+            <p>
+                O manuseio de percloreto de ferro requer cuidados específicos devido à sua natureza corrosiva. É fundamental usar equipamentos de proteção individual (EPI) adequados, como luvas e óculos de segurança, e trabalhar em um ambiente bem ventilado para evitar a inalação de vapores.
+            </p>
+            <p>
+                Para a parte pratica desta semana, escolhi desenvolver o projeto de uma antena de microfita com o metodo de corrosão por percloreto de ferro. A antena a ser desenvolvida será usada em pesquisas no laboratorio de eletromagnetismo aplicado (LEMAG).
+            </p>
+            <p>
+                Primeiramente a antena de microfita foi projeta no software de simulação Anys HFSS, onde a antena foi dimensionada para operar de acordo com as especicações de projeto.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_b1bd2989f0944ee0929b378aa78a942d~mv2.jpg" alt="Impressora 3D"img style= "width: 300px;" />
+            <p>
+                O software por se tratar de uma versão estudande não permite que o projeto da antena seja exportado em um formato vetorizado, sendo necessario primeiramente exportar a geometria em formato de imagem e posteriormente converter para um formato vetorizado. O Inkscape permite fazer essa conversão do formato da gemotria, tornando possiviel o corte na cortadora a lazer.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_7f91c70fe7594c3eadcb8bf317b7b1e8~mv2.png" alt="Impressora 3D"img style= "width: 300px;" />
+            <p>
+                O desenho foi configurado para ter um contorno minimo e na cor vermelho que indica corte. Foi utilizado o vinil sobre a placa de fibra de vidro FR4, o corte a laser ira definir as regiões onde ocorrera a corrosão na placa de circuito impresso.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_2929652f733147379288d7e9cf56af3a~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
+            <p>
+                O potência do laser foi configurada para cortar apenas o vinil que sera destacado onde deve ser usado o percloreto de ferro. Foi utilizado um pedaço de FR4 maior do que a antena projeta para facilitar o posicionamento do bico do laser, posteriormente a area excedente foi lixada até se obter as dimensões corretas da antena.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_2ace68130df14778a7cc80e604374e1c~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
+            <p>
+                A plaqueta da antena foi então colocada em um recipiente contendo um solução do percloreto de ferro com água para corroer o cobre da parte superior da antena. A reação costuma ser rapida, e processo todo leva em torno de 20 minutos.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_893f78086e1043538838f6d2b6f55df6~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
+            <p>
+                Por fim temos a antena pronta, foram necessarios para esse projeto reunir varios processos e maquinas do laboratorio, evidênciando que o conhecimento adquirido nas aulas foi fundamental para o seu desenvolvimento. 
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_0e85cd10409c4fbf93706aa1c4c94699~mv2.jpeg" alt="Impressora 3D"img style= "width: 300px;" />
+            </div>
+       
+        <div class="projeto" id="projeto">
+            <h2>Sexta semana - Labirinto 3D controlado por anduino:</h2>
+            <p>
+                O projeto final da disciplina de Fabricação Digital foi a criação de um labirinto 3D controlado por Arduino. Este dispositivo utiliza dois servomotores para movimentar o labirinto nos eixos X e Y, permitindo que uma esfera navegue pelo percurso com base nas inclinações do tabuleiro. A movimentação do labirinto é controlada por um joystick, proporcionando uma interface intuitiva e responsiva para o usuário. O objetivo deste projeto foi demonstrar a integração de componentes eletrônicos com a mecânica de precisão, além de oferecer uma experiência prática em controle e automação.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_238dd151ab8c47ce8f40fba07f7e1044~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+            <h2>Materiais Utilizados</h2>
+            <ul>
+                <li>1 x Arduino Uno</li>
+                <li>2 x Servomotores</li>
+                <li>1 x Joystick analógico</li>
+           
+                <li>Fios jumper</li>
+                <li>1 x Labirinto 3D (estruturado em plástico)</li>
+                <li>Parafusos e porcas para fixação</li>
+                <li>1 x Bateria 9V com suporte</li>
+                <li>1 x Fonte de alimentação para o Arduino</li>
+                <li>Componentes de montagem (braçadeiras, suportes, etc.)</li>
+            </ul>
+            <h2>Passo a Passo de Montagem do Projeto</h2>
+            <h3>1. Preparação da Estrutura do Labirinto</h3>
+            <p>
+                Iniciei montando a estrutura do labirinto 3D utilizando PLA como material para as peças do labirinto. As peças foram fateadas no software CURA onde foram programadas todas as configurações de impressão, assim como descrito anteriormente, e logo após as
+                peças foram impressas na impressora 3D. A estrutura foi projetada para permitir a inclinação do labirinto nos eixos X e Y sem obstruções.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_f32c83b59652472a9f8f487ce96a2e11~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+            <p>
+                Após imprimir todas as peças, passei para etapa de montagem do labirinto. Primeiramente a placa do microcontrolador foi colocada e parafuzada na base do labirindo, em seguida a base onde deve ser colocado o primeiro servo motor foi posta acima do arduino.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_233b2c49c2694b10be152fef63beef3d~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+            <p>
+                Em seguinda foram conectados os cabos de alimentação dos servos motores e do joystick no arduino. Para realizar essa conecção de uma maneira mais pratica e para diminuir a quantidade de jumpers, houve-se a necessidade de criar um um jumper com 4 terminais, sendo 3 machos e 1 femea para realizar as coneções. Esses jumpers foram feitos utilizando os conhecimentos desenvolvidos na aula de soldagem.
+
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_9bad953d97fc4671b760baef29af97ae~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+            <p>
+                Para finalizar a conecção desses componentes, conectei os terminas de PWM dos servos nos pinos 9 e 10, e o movimento do joystick no eixo x e y foi concetado nos pinos A1 e A0 do arduino.
+            </p>
+            <img src="https://static.wixstatic.com/media/88b824_677a5ebd29c94e74904b022184b8b55c~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+            <P>
+                Ao terminar de realizar todas as conecções, partir para a montagem das partes restantes. Os servos foram encaixados nas posições de forma que um controla a inclinação no eixo X e o outro no eixo Y. Utilizei parafusos e suportes adequados para garantir que os servomotores estivessem firmemente presos.
+                O labirinto também foi parafuzado na parte superior do projeto e nivelado para garantir que a espera se mova apenas quando o joystick seja assionado.
+            </P>
+            <img src="https://static.wixstatic.com/media/88b824_3d28bcebef3048c79b5a7c59b87c55f6~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+          <P>
+            Os brações dos servos motores foram fixados com parafusos para garantir o correto movimento do labirinto na parte superior.
+          </P>
+          <img src="https://static.wixstatic.com/media/88b824_638f477b8d3b48b880475041e7f5c117~mv2.png" alt="Impressora 3D"img style= "width: 600px;" />
+          <p>
+            Carreguei o código necessário no Arduino para controlar os servomotores com base na entrada do joystick. Realizei testes iniciais para verificar se a movimentação do labirinto respondia corretamente aos comandos do joystick. Fiz ajustes nas conexões e na programação conforme necessário.
+        </p>
+        <P>
+            O projeto final com todas as partes montadas ficou como mostrado na figura abaixo:
+        </P>
+        <img src="https://static.wixstatic.com/media/88b824_c0a0f7a210ec48568842752767ddef62~mv2.jpg" alt="Impressora 3D"img style= "width: 600px;" />
+        <p>
+            Infelizmente, não foi possível colocar o projeto para funcionar corretamente, pois alguns dos componentes não estavam operando de maneira adequada, o que impossibilitou o labirinto de funcionar conforme o esperado. No entanto, a realização deste projeto serviu como uma experiência valiosa para projetos futuros e foi importante por reunir vários conhecimentos vistos na disciplina de Laboratório de Fabricação Digital. Mesmo com os desafios enfrentados, o projeto proporcionou um aprendizado significativo sobre a integração de sistemas eletrônicos e mecânicos.
+        </p>
     </div>
 </body>
 </html>
